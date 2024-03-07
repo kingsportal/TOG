@@ -1,11 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Customized Navigation</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #d4cfc6;
+    font-family: Arial, sans-serif;
+  }
+
+  .nav_pages ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav_pages li {
+    padding: 10px 20px;
+    border-top: 1px solid #645844;
+    border-bottom: 1px solid #645844;
+  }
+
+  .nav_pages li:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  .nav_pages a {
+    text-decoration: none;
+    color: #645844;
+  }
+
+  .nav_pages li.active {
+    background-color: #2FC4C6;
+    border-bottom-color: transparent;
+  }
+
+  .nav_pages li.active a {
+    color: white;
+  }
+</style>
 </head>
-<body background="./depositphotos_376564786-stock-photo-brown-yellow-paper-texture-background-transformed.jpeg">
-    
+<body>
+  <section class="nav_content">
+    <nav>
+      <div class="nav_pages">
+        <ul>
+          <li><a href="#" onclick="setActive(this)">HOME</a></li>
+          <li><a href="#" onclick="setActive(this)">HISTORY</a></li>
+          <li><a href="#" onclick="setActive(this)">PRAYERS</a></li>
+          <li><a href="#" onclick="setActive(this)">SCRIPTURES</a></li>
+          <li><a href="#" onclick="setActive(this)">DARSHAN</a></li>
+        </ul>    
+      </div>          
+    </nav>
+  </section>
+
+  <script>
+    function setActive(element) {
+      // Remove active class from all navigation items
+      const navItems = document.querySelectorAll('.nav_pages li');
+      navItems.forEach(item => {
+        item.classList.remove('active');
+      });
+
+      // Add active class to the clicked navigation item
+      element.parentElement.classList.add('active');
+    }
+  </script>
 </body>
 </html>

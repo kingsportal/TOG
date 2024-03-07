@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Basic&family=Fredericka+the+Great&display=swap');
+
+:root
+{
+    --active-hover-highlight-color: #2FC4C6;
+    --text-color: #645844;
+    --light-text: white;
+}
+body
+{
+    
+   background: url(./img/bg/tbg.jpeg);
+   margin: 0%;
+}
+
+a
+{
+    text-decoration: none;
+    
+}
+
+
+/* Start of Daily Prayer redirect notification*/
+header
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--text-color);
+    padding: 0%;
+    color: var(--light-text);
+    font-weight: 400;
+    letter-spacing: 0.8px;
+
+}
+header button
+{
+    margin-left: 24px;
+    width: 108px;
+    height: 33px;
+    border-radius: 16px;
+    border: none;
+    font-weight: bold;
+}
+header button:hover
+{
+    color: white;
+    font-weight: bold;
+    background-color: var(--active-hover-highlight-color);   
+}
+
+/*End of Daily Prayer redirect notification*/
+
+/* Start of logo and search with user login*/
+.logo_des
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0px 167px 0px 167px;
+}
+.logo_des a
+{
+    background-color: transparent;
+    color: #A9B709;
+    font-family: "Fredericka the Great", serif;
+    font-size: 26px;
+    font-weight: 400;
+    font-style:normal;
+  
+}
+#search_box
+{
+    border-radius: 8px;
+    width: 392px;
+    height: 44px;
+    border:none;
+    padding: 0px 0px 0px 12px;
+}
+
+/* End of logo and search with user login*/
+
+/*Start of Navigation bar*/
+ul
+{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    
+}
+
+ul li {
+    margin: 0 12px; 
+    padding: 10px 34px;
+    border-top: 1px solid #645844;
+    border-bottom: 1px solid #645844;
+    
+}
+ul li:hover
+{
+    background-color: var(--active-hover-highlight-color);
+    border-color: transparent;
+}
+.nav_content
+{
+    padding:0px 167px 0px 167px;
+}
+nav
+{
+    border-color: #645844;
+    border-radius: 1px;
+    font-size: 23px;
+    word-spacing: 5px;
+    align-items: center;
+    font-family: "Basic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+nav a
+{
+    color: var(--text-color);
+}
+nav a:hover
+{
+    color: white;
+    background-color: var(--active-hover-highlight-color);
+}
+nav li.active 
+{
+    background-color: var(--active-hover-highlight-color);
+    border-color: transparent;
+}
+
+.nav_pages li.active a 
+{
+    color: var(--light-text);
+}
+
+/*Start of Navigation bar*/
+
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
