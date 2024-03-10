@@ -9,7 +9,7 @@
 body
 {
     
-   background: url(./img/bg/tbg.jpeg);
+   background-color: var(--light-text);
    margin: 0%;
 }
 
@@ -38,7 +38,7 @@ header button
     margin-left: 24px;
     width: 108px;
     height: 33px;
-    border-radius: 16px;
+    border-radius: 8px;
     border: none;
     font-weight: bold;
 }
@@ -67,7 +67,22 @@ header button:hover
     font-size: 26px;
     font-weight: 400;
     font-style:normal;
-  
+}
+.logo_des button
+{
+    padding: 12px;
+    height: 40px;
+    border-radius: 26px;
+    border: none;
+    background-color: #2FC4C6;
+    color: white;
+    font-weight: 790;
+}
+.logo_des button:hover
+{
+    background-color: var(--light-text);
+    color: #645844;
+    font-weight: 790;
 }
 #search_box
 {
