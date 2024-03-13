@@ -3,75 +3,86 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Customized Navigation</title>
+<title>Navigation with Subnav</title>
 <style>
-  body {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #d4cfc6;
-    font-family: Arial, sans-serif;
-  }
+    .nav_content {
+        font-family: Arial, sans-serif;
+        padding:0px 167px 0px 167px;
+        
+    }
+    .nav_pages ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+    .nav_pages ul li {
+        display: inline-block;
+        position: relative;
+        margin: 0 12px; 
+        padding: 10px 34px;
+        border-top: 1px solid #645844;
+        border-bottom: 1px solid #645844;
 
-  .nav_pages ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-  }
-
-  .nav_pages li {
-    padding: 10px 20px;
-    border-top: 1px solid #645844;
-    border-bottom: 1px solid #645844;
-  }
-
-  .nav_pages li:not(:last-child) {
-    margin-right: 10px;
-  }
-
-  .nav_pages a {
-    text-decoration: none;
-    color: #645844;
-  }
-
-  .nav_pages li.active {
-    background-color: #2FC4C6;
-    border-bottom-color: transparent;
-  }
-
-  .nav_pages li.active a {
-    color: white;
-  }
+    }
+    .nav_pages ul li ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        padding: 10px;
+        min-width: 120px;
+        z-index: 1;
+    }
+    .nav_pages ul li:hover ul {
+        display: block;
+    }
+    .nav_pages ul li a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: #333;
+    }
+    .nav_pages ul li a:hover {
+        background-color: #f0f0f0;
+    }
+    .subnav li
+    {
+      border: transparent;
+    }
 </style>
 </head>
 <body>
-  <section class="nav_content">
+
+<section class="nav_content">
     <nav>
-      <div class="nav_pages">
-        <ul>
-          <li><a href="#" onclick="setActive(this)">HOME</a></li>
-          <li><a href="#" onclick="setActive(this)">HISTORY</a></li>
-          <li><a href="#" onclick="setActive(this)">PRAYERS</a></li>
-          <li><a href="#" onclick="setActive(this)">SCRIPTURES</a></li>
-          <li><a href="#" onclick="setActive(this)">DARSHAN</a></li>
-        </ul>    
-      </div>          
+        <div class="nav_pages">
+            <ul>
+                <li>
+                    <a href="#" onclick="setActive(this)">HOME &#9660;</a>
+                    <ul class="subnav">
+                        <li><a href="#" onclick="setActive(this)">RSS</a></li>
+                        <li><a href="#" onclick="setActive(this)">BRANDAL</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" onclick="setActive(this)">HISTORY</a></li>
+                <li><a href="#" onclick="setActive(this)">PRAYERS</a></li>
+                <li>
+                    <a href="#" onclick="setActive(this)">SCRIPTURES &#9660;</a>
+                    <ul class="subnav">
+                        <li><a href="#" onclick="setActive(this)">BOOKS</a></li>
+                        <li><a href="#" onclick="setActive(this)">ARTICLES</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" onclick="setActive(this)">DARSHAN</a></li>
+            </ul>
+        </div>
     </nav>
-  </section>
+</section>
 
-  <script>
-    function setActive(element) {
-      // Remove active class from all navigation items
-      const navItems = document.querySelectorAll('.nav_pages li');
-      navItems.forEach(item => {
-        item.classList.remove('active');
-      });
 
-      // Add active class to the clicked navigation item
-      element.parentElement.classList.add('active');
-    }
-  </script>
+
 </body>
 </html>

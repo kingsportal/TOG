@@ -96,7 +96,7 @@ header button:hover
 /* End of logo and search with user login*/
 
 /*Start of Navigation bar*/
-ul
+.nav_pages ul
 {
     list-style: none;
     display: flex;
@@ -150,6 +150,54 @@ nav li.active
 .nav_pages li.active a 
 {
     color: var(--light-text);
+}
+
+.nav_content {
+    font-family: Arial, sans-serif;
+    padding:0px 167px 0px 167px;
+    
+}
+.nav_pages ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.nav_pages ul li {
+    display: inline-block;
+    position: relative;
+    margin: 0 12px; 
+    padding: 10px 34px;
+    border-top: 1px solid #645844;
+    border-bottom: 1px solid #645844;
+
+}
+.nav_pages ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    min-width: 120px;
+    z-index: 1;
+}
+.nav_pages ul li:hover ul {
+    display: block;
+}
+.nav_pages ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+}
+.nav_pages ul li a:hover {
+    background-color: #f0f0f0;
+}
+.subnav li
+{
+  border: transparent;
 }
 
 /*Start of Navigation bar*/
