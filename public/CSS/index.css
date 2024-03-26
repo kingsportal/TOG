@@ -16,6 +16,7 @@ body
 a
 {
     text-decoration: none;
+    color: black;
     
 }
 
@@ -200,12 +201,223 @@ nav li.active
   border: transparent;
 }
 
-/*Start of Navigation bar*/
+/*end of Navigation bar*/
 
-/**/
-/**/
-/**/
-/**/
+/*Start of hero section*/
+/* test.css */
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col-lg-6.mb-lg-30 {
+    order: 2; /* Move the right column to the end */
+}
+
+.col-lg-6 {
+    width: calc(50% - 50px); /* 50% of the container width minus the padding */
+    order: 1; /* Move the left column to the beginning */
+}
+
+.hero_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+  
+.hero_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.img-group {
+    position: relative;
+    width: 456px; /* width of the frame */
+    height: 513px; /* height of the frame */
+}
+  
+.img-group img {
+    position: absolute;
+}
+
+.img-group img:nth-child(1) {
+    width: 296px;
+    height: 353px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Bring the first image to the front */
+}
+  
+.img-group img:nth-child(2) {
+    width: 160px; /* width of the smaller images */
+    height: auto;
+    top: 0;
+    left: 0;
+    z-index: 0; /* Lower the z-index to ensure it's behind the first image */
+}
+  
+.img-group img:nth-child(3) {
+    width: 160px; /* width of the smaller images */
+    height: auto;
+    bottom: 0;
+    right: 0;
+    z-index: 0; /* Lower the z-index to ensure it's behind the first image */
+}
+  
+.section-title {
+    margin-bottom: 20px;
+}
+  
+.sigma_list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+  
+.sigma_list li {
+    margin-bottom: 10px;
+}
+  
+.blockquote {
+    margin-bottom: 20px;
+}
+  
+.sigma_btn-custom {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #007bff; /* blue color */
+    color: #fff; /* white color */
+}
+  
+.sigma_btn-custom.light {
+    background-color: #f8f9fa; /* light gray color */
+    color: #000; /* black color */
+}
+  
+.sigma_btn-custom i {
+    margin-left: 5px;
+}
+/* test.css */
+
+/* Heading */
+h4.title {
+    color: #db4242; /* Heading text color */
+}
+
+/* Paragraph */
+.section-title p.subtitle,
+.blockquote {
+    color: #db4248; /* Paragraph text color */
+}
+
+/* General Text */
+body {
+    color: #000; /* General text color */
+}
+
+/* Side Button */
+.sigma_btn-custom {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #000; /* Button text color */
+    border: 1px solid #000; /* Button border color */
+    background-color: transparent; /* Button background color */
+    transition: background-color 0.3s ease;
+}
+
+.sigma_btn-custom:hover {
+    background-color: #000; /* Button background color on hover */
+    color: #fff; /* Button text color on hover */
+}
+
+/*End of hero section*/
+/*Start of footer*/
+footer
+{
+    
+    padding:0px 167px 0px 167px;
+    
+}
+.footindi
+{
+    display: flex;
+    justify-content: space-between;
+}
+#foot_logo_info
+{
+    width: 303.45px;
+    height: 36px;
+}
+
+.foot_subscribe_title {
+    width: 421px;
+    height: 78px;
+}
+
+.subscribe_input {
+    position: relative;
+    width: 421px;
+    height: 49px;
+    background-color: rgba(6, 19, 39, 0.205);
+    border-radius: 8px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+}
+
+#subscribe_input_placeholder {
+    background-color: transparent;
+    border: none;
+    color: white;
+    width: calc(100% - 83px); 
+    height: 49px;
+    padding-right: 90px; 
+}
+
+.btn_subscribe {
+    position: absolute;
+    width: 83px;
+    height: 33px;
+    border: none;
+    border-radius: 4px;
+    background-color: white;
+    color: black; 
+    cursor: pointer;
+    margin: 10px; 
+}
+.btn_subscribe:hover
+{
+   background-color: #92cceb;
+   color: white;
+}
+.copy_nav
+{
+   
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer_nav
+{
+   
+    display: flex;
+    justify-content: space-between;
+    
+}
+.footer_nav h3 {
+    padding-left: 8px;
+    padding-right: 8px; 
+  
+  }
+/*End of footer*/
 /**/
 /**/
 /**/
