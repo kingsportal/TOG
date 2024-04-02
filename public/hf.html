@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  
     <link rel="stylesheet" href="./CSS/hed_foot.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <title>Sanathana vedantism</title>
 </head>
-<body>
+<body >
     <section class="daily_prayer">
         <header>
             <p>Shubh Prabhatam! Breathe deep, chant "Om". Daily pujas bring blessings from home.</p>
@@ -27,8 +29,8 @@
                     <a href="index.html" onclick="setActive(this)">HOME &#9660;</a>
                     <div class="submenu_container">
                         <ul class="submenu">
-                            <li><a href="./404.html" onclick="setActive(this)">RSS</a></li>
-                            <li><a href="./404.html" onclick="setActive(this)">BRANDAL</a></li>
+                            <li id="sub_list"><a href="./404.html" onclick="setActive(this)">RSS</a></li>
+                            <li id="sub_list"><a href="./404.html" onclick="setActive(this)">BRANDAL</a></li>
                         </ul>
                     </div>
                 </li>
@@ -38,8 +40,8 @@
                     <a href="./404.html" onclick="setActive(this)">SCRIPTURES &#9660;</a>
                     <div class="submenu_container">
                         <ul class="submenu">
-                            <li><a href="./404.html" onclick="setActive(this)">BOOKS</a></li>
-                            <li><a href="./404.html" onclick="setActive(this)">ARTICLES</a></li>
+                            <li id="sub_list"><a href="./404.html" onclick="setActive(this)">BOOKS</a></li>
+                            <li id="sub_list"><a href="./404.html" onclick="setActive(this)">ARTICLES</a></li>
                         </ul>
                     </div>
                 </li>
@@ -48,7 +50,10 @@
         </div>
     </nav>
     </section>
-    <section class="footer_sec">
+
+
+
+      <section class="footer_sec">
         <footer>
           <div class="footindi">
               <div class="foot_info">
@@ -93,7 +98,30 @@
       </section>
     
     <script src="./JS/index.js"> </script>
+    <script>
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "firebase/app";
+      import { getAnalytics } from "firebase/analytics";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
 
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyB8IdPXLfuBpvZUq3Nc4TLtFHQq_FI9hyE",
+        authDomain: "sanathana-vedantism.firebaseapp.com",
+        projectId: "sanathana-vedantism",
+        storageBucket: "sanathana-vedantism.appspot.com",
+        messagingSenderId: "1044924907059",
+        appId: "1:1044924907059:web:2b8a20927244da3c3ead46",
+        measurementId: "G-25FF808Y2E"
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
     
+ 
 </body>
 </html>

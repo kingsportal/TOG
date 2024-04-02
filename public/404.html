@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Page Not Found</title>
-  <link rel="stylesheet" href="./CSS/index.css">
+  <link rel="stylesheet" href="./CSS/hed_foot.css">
   <link rel="stylesheet" href="./CSS/404.css">
 </head>
 <body>
@@ -17,7 +17,7 @@
 </section>
 
 <section class="logo_des">
-  <a href=""><h1 id="logo_name">SANATHANA SANGHA</h1></a>
+  <a href="./index.html"><h1 id="logo_name">SANATHANA SANGHA</h1></a>
   <input type="text" placeholder="&#xF002; Search for..." style="font-family:Arial, FontAwesome" id="search_box" />
   <button>Login/Sign up</button>
 </section>
@@ -27,7 +27,7 @@
     <div class="nav_pages">
       <ul class="main_menu">
         <li class="menu_item">
-          <a href="#" onclick="setActive(this)">HOME &#9660;</a>
+          <a href="./index.html" onclick="setActive(this)">HOME &#9660;</a>
           <div class="submenu_container">
             <ul class="submenu">
               <li><a href="#" onclick="setActive(this)">RSS</a></li>
@@ -52,9 +52,9 @@
   </nav>
 </section>
 
-<section class="404_video">
+<section class="404_video" id="videoout" >
   <div class="video-container">
-    <video id="bg-video" autoplay loop muted>
+    <video id="bg-video" autoplay muted>
       <source src="./assets/video/TOG404.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
@@ -62,9 +62,11 @@
     <div class="text-overlay">
       <h2>We are working on the page</h2>
       <p>Please check back soon</p>
+      
     </div>
     <div class="bottom-text">
       It will be soon available. Visit again!
+      <p>Subscribe to get updated</p>
     </div>
   </div>
 </section>
