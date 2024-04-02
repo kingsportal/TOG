@@ -1,0 +1,143 @@
+*{
+    box-sizing: border-box;
+    
+}
+.about_bd
+{
+    padding:80px 167px 0px 167px;
+    font-size: 24px;
+
+}
+.join_bd
+{
+    padding:167px 167px 167px 167px;  
+}
+#view_re
+{
+    background-color: #2FC4C6;
+    padding: 12px;
+    height: 40px;
+    border-radius: 26px;
+    color: white;
+   
+}
+#view_re:hover
+{
+    background-color: #009fa1;
+}
+#vhp
+{
+    text-align: center;
+    padding: 24px;
+    color: #ff6600;
+}
+.bd_panel-content p
+{
+    padding-bottom:24px ;
+}
+
+
+.card{
+    margin: auto;
+    background: whitesmoke;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    width: 700px;
+    height: 500px;
+    box-shadow: 7px 14px 34px #2d2e3d34;
+
+}
+.gain{
+    text-align: left;
+    line-height: 1.5;
+    color: grey;
+    font-weight: 500;
+    
+}
+h1,h2,h3,h4,p,span,b{
+    font-family: 'Karla', sans-serif;
+}
+#join{
+    font-weight: 900;
+    color: #2bb3b1;
+}
+#days{
+    font-weight: 500;
+    color: #bfdf32;
+}
+.left_sec{
+    display: flex;
+    margin-top: 17px;
+
+}
+.monthly{
+    background-color: #2bb3b1;
+    width: 57%;
+    height: 293px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: -50px;
+    margin-right: -2px;
+    padding-top: 40px;
+    padding-left: 46px;
+    border-bottom-left-radius: 10px;
+    float: left;
+}
+.whyus{
+    background-color: #4abebd;
+    width: 57%;
+    height: 293px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: -4px;
+    margin-right: -50px;
+    padding-top: 36px;
+    padding-left: 53px;
+    border-bottom-right-radius: 10px;
+    float: right;
+}
+#monthly{
+    font-weight: 700;
+    color: white;
+}
+
+.whyus p{
+    font-weight: 500;
+    color: white;
+}
+.benefits{
+    font-weight: 400;
+    line-height: 1.5;
+    opacity: 70%;
+}
+#why{
+    font-weight: 800;
+    color: white;
+}
+.attribution {
+    color: black;
+    font-weight: 100;
+    font-style: italic;
+    text-decoration: unset;
+}
+#click{
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  width: 243px;
+  background-color: #bfdf32;
+  box-shadow:0 1px 10px #0f4e4d;
+}
+#click:hover{
+    background-color: #70831c;
+    box-shadow: 1px 2px 5px #0b3b3b;
+    cursor: pointer;
+}
