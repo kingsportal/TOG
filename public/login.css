@@ -1,4 +1,7 @@
-
+body
+{
+    background-color: skyblue;
+}
 .form-popup {
     position: fixed;
     top: 50%;
