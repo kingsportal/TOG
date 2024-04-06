@@ -1,0 +1,108 @@
+/* card.css */
+
+h1 {
+    text-align: center;
+}
+
+.carousel {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: hidden; /* changed from 'auto' to 'hidden' to remove scrollbar */
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch; /* for smooth scrolling on iOS */
+}
+
+.book {
+    flex: 0 0 auto;
+    width: 300px;
+    height: auto;
+    margin: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    scroll-snap-align: start;
+    border-radius: 1.5em;
+    position: relative; 
+}
+
+.book img {
+    width: 100%;
+    height: auto;
+    border-radius: 1.5em 1.5em 0em 0em;
+}
+
+.book h2 {
+    margin: 10px;
+    text-align: left;
+}
+
+.book p {
+    margin: 10px;
+    text-align: left;
+}
+.read_more
+{
+    color: #357eea;
+}
+
+.download {
+    display: block;
+    margin: 10px 0px 10px auto ;
+    margin-right: 10px; 
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 8px;
+    width: fit-content; 
+  
+}
+
+.download:hover {
+    background-color: #0056b3;
+}
+
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    padding: 0px 167px 30px 167px;
+}
+
+.cc
+{
+    margin: 0px 167px 0px 167px;
+    text-align: right;
+    
+}
+.carousel-control {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1;
+}
+.prev,.next
+{
+    background-color: #d1d1d1;
+    border-radius: 24%;
+}
+
+.carousel-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #bbb;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.active-dot {
+    background-color: #333;
+}

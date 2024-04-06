@@ -154,52 +154,33 @@
     </section>
 
     <section class="media_player">
-      <audio id="audioPlayer">
-          <source src="song1.mp3" type="audio/mpeg">
-          <source src="song2.mp3" type="audio/mpeg">
-          <source src="song3.mp3" type="audio/mpeg">
-          <source src="song4.mp3" type="audio/mpeg">
-          <source src="song5.mp3" type="audio/mpeg">
-      </audio>
+      <div class="music-container">
+          <div class="music-info">
+              <h4 id="title">song name</h4>
+              <div class="progress-container">
+                  <div class="progress"></div>
+              </div>
+          </div>
+  
+          <audio src="music/Balavanthuda.mp3" id="audio"></audio>
+  
+          <div class="img-container">
+              <img src="images/Balavanthuda.jpg" alt="song image" id="cover">
+          </div>
+  
+          <div class="navigation">
+              <button id="prev" class="action-btn">
+                  <i class="fas fa-backward"></i>
+              </button>
+              <button id="play" class="action-btn action-btn-big">
+                  <i class="fas fa-play"></i>
+              </button>
+              <button id="next" class="action-btn">
+                  <i class="fas fa-forward"></i>
+              </button>
+          </div>
+      </div>
     </section>
-
-        
-    <div class="overview">
-      <div id="mission-section" class="info-section active-section">
-          <h2>What we are</h2>
-          <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.”</p>
-      </div>
-  
-      <div id="vision-section" class="info-section">
-          <h2>VISION Information</h2>
-          <h2>What we are</h2>
-          <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.”</p>
-          <!-- Add your vision information here -->
-      </div>
-  
-      <div id="values-section" class="info-section">
-          <h2>VALUES Information</h2>
-          <h2>What we are</h2>
-          <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.”</p>
-          <!-- Add your values information here -->
-      </div>
-      <div class="slider-container">
-          <input type="range" min="1" max="3" value="1" class="slider" id="sectionSlider">
-        </div>
-      <div class="over_head">
-          <div class="mission" onclick="showSection('mission')">
-              <img src="./images/icon/Circle Avatar.jpg" id="as1"><h1>MISSION</h1>
-          </div>
-          <div class="vision" onclick="showSection('vision')">
-              <img src="./images/icon/Circle Avatar.jpg" id="as1"><h1>VISION</h1>
-          </div>
-          <div class="values"onclick="showSection('values')">
-              <img src="./images/icon/Circle Avatar.jpg" id="as1"><h1>VALUES</h1>
-          </div>
-          
-      </div>        
-  </div>
-
 
     <section class="footer_sec">
         <footer>

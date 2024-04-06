@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/index.css">
     <link rel="stylesheet" href="./CSS/hed_foot.css">
+    <link rel="stylesheet" href="./CSS/card.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
     <title>Sanathana vedantism</title>
 </head>
@@ -12,14 +13,14 @@
     <section class="daily_prayer">
         <header>
             <p>Shubh Prabhatam! Breathe deep, chant "Om". Daily pujas bring blessings from home.</p>
-            <button>Start Puja &#8594;</button>
+            <button onclick="URL('./prayers.html')">Start Puja &#8594;</button>
         </header>
     </section>
 
     <section class="logo_des">
         <a href="./index.html"><h1 id="logo_name">SANATHANA SANGHA</h1></a>
         <input type="text" placeholder="&#xF002; Search for..." style="font-family:Arial, FontAwesome" id="search_box" />
-        <button>Login/Sign up</button>
+        <button class="login-btn">Login/Sign up</button>
     </section>
     <section class="nav_content">
       <nav>
@@ -87,6 +88,97 @@
         </div>
       </section>
 
+
+      <section>
+        <h1>Featured Books</h1>
+    <div class="cc">
+        <button class="carousel-control prev">&lt;</button>
+        <button class="carousel-control next">&gt;</button>
+    </div>
+  
+    <div class="carousel-container">
+        <div class="carousel">
+            <!-- Book 1 -->
+            <div class="book">
+                <img src="./assets/img/1.jpg" alt="Book 1">
+                <h2>Bhagavad Gita</h2>
+                <p>The Bhagavad Gita, often referred to as the Gita, is a 700-verse Hindu scripture, which is part of the epic Mahabharata. It forms the chapters 23–40 of book 6 of the Mahabharata called the Bhishma Parva. The work is dated to the second half of the first millennium BCE. <a href="https://en.wikipedia.org/wiki/Bhagavad_Gita" class="read_more" >Read more</a></p>
+                <a href="#" class="download">GET IT</a>
+            </div>
+    
+            <!-- Book 2 -->
+            <div class="book">
+                <img src="./card_img.png" alt="Book 2">
+                <h2>Book Title 2</h2>
+                <p>Description of Book 2</p>
+                <a href="#">Read More</a>
+            </div>
+    
+            <!-- Repeat for other books -->
+            
+            <!-- Book 2 -->
+            <div class="book">
+                <img src="./assets/img/card_img.png" alt="Book 2">
+                <h2>Book Title 3</h2>
+                <p>Description of Book 2</p>
+                <a href="#">Read More</a>
+            </div>
+            <!-- Book 2 -->
+            <div class="book">
+                <img src="./assets/img/book-cover-4397758.jpg" alt="Book 2">
+                <h2>Book Title 4</h2>
+                <p>Description of Book 2</p>
+                <a href="#">Read More</a>
+            </div>
+            <!-- Book 2 -->
+            <div class="book">
+                <img src="./assets/img/depositphotos_376564786-stock-photo-brown-yellow-paper-texture-background-transformed.jpeg" alt="Book 2">
+                <h2>Book Title 5</h2>
+                <p>Description of Book 2</p>
+                <a href="#">Read More</a>
+            </div>
+            <!-- Book 2 -->
+            <div class="book">
+                <img src="./assets/img/card_img.png" alt="Book 2">
+                <h2>Book Title 6</h2>
+                <p>Description of Book 2</p>
+                <a href="#">Read More</a>
+            </div>
+            <!-- Book 2 -->
+            <div class="book">
+                <img src="./assets/img/old-books-436498.jpg" alt="Book 2">
+                <h2>Book Title 7</h2>
+                <p>Description of Book 2</p>
+                <a href="#">Read More</a>
+            </div>
+            <!-- Book 2 -->
+            <div class="book">
+                <img src="./assets/img/card_img.png" alt="Book 2">
+                <h2>Book Title 8</h2>
+                <p>Description of Book 2</p>
+                <a href="#">Read More</a>
+            </div>
+            <!-- Book 2 -->
+            <div class="book">
+                <img src="./assets/img/1.jpg" alt="Book 2">
+                <h2>Book Title 9</h2>
+                <p>Description of Book 2</p>
+                <a href="#">Read More</a>
+            </div>
+            <!-- Book 2 -->
+            <div class="book">
+                <img src="./assets/img/2.jpg" alt="Book 2">
+                <h2>Book Title 10</h2>
+                <p>Description of Book 2</p>
+                <a href="#">Read More</a>
+            </div>
+    
+        </div>
+        <div class="carousel-dots"></div> <!-- Container for dots -->
+    </div>
+
+      </section>
+
       <section class="footer_sec">
         <footer>
           <div class="footindi">
@@ -132,6 +224,8 @@
       </section>
     
     <script src="./JS/index.js"> </script>
+    <script src="./JS/card.js"></script>
+
     <script>
       // Import the functions you need from the SDKs you need
       import { initializeApp } from "firebase/app";
