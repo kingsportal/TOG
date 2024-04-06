@@ -26,8 +26,8 @@ h1 {
 
 .book img {
    width: 100%;
-    height: auto;
-    border-radius: 1.5em 1.5em 0em 0em;
+   height: 480px;
+   border-radius: 1.5em 1.5em 0em 0em;
 }
 
 
