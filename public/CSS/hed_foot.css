@@ -216,6 +216,12 @@ footer
     width: 303.45px;
     height: 36px;
 }
+#logo_name_fooa
+{
+    margin: 0%;
+
+    text-align: left;
+}
 
 .foot_subscribe_title {
     width: 421px;
