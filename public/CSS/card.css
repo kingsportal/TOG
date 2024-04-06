@@ -15,7 +15,7 @@ h1 {
 .book {
     flex: 0 0 auto;
     width: 300px;
-    height: auto;
+    height: 750px;
     margin: 10px;
     border: 1px solid #ccc;
     text-align: center;
@@ -28,6 +28,7 @@ h1 {
    width: 100%;
    height: 480px;
    border-radius: 1.5em 1.5em 0em 0em;
+   margin-bottom: 10px;
 }
 
 
@@ -46,16 +47,14 @@ h1 {
 }
 
 .download {
-    display: block;
-    margin: 10px 0px 10px auto ;
-    margin-right: 10px; 
+    position: absolute; /* Set absolute positioning */
+    bottom: 10px; /* Adjust the distance from the bottom */
+    right: 10px; /* Adjust the distance from the right */
     text-decoration: none;
     background-color: #007bff;
     color: #fff;
     padding: 5px 10px;
     border-radius: 8px;
-    width: fit-content; 
-  
 }
 
 .download:hover {
