@@ -1,15 +1,23 @@
 document.addEventListener('DOMContentLoaded', function() {
     const carousel = document.querySelector('.carousel');
     const carouselContainer = document.querySelector('.carousel-container');
-    const scrollAmount = 300;
-    const scrollInterval = 4000; // Auto-scroll interval set to 4 seconds
+    const scrollAmount = 400;
+    const scrollInterval = 3500; // Auto-scroll interval set to 4 seconds
     let scrollIntervalId;
     const dotsContainer = document.createElement('div'); // Create dots container
     dotsContainer.classList.add('carousel-dots'); // Add class to dots container
 
     function startAutoScroll() {
         scrollIntervalId = setInterval(function() {
-            carousel.scrollBy(scrollAmount, 0);
+            // Check if reaching the end of carousel content, then scroll back to the beginning
+            if (carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth) {
+                carousel.scrollTo({
+                    left: 0,
+                    behavior: 'smooth'
+                });
+            } else {
+                carousel.scrollBy(scrollAmount, 0);
+            }
         }, scrollInterval);
     }
 
@@ -25,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Generate dots based on the number of books
     const books = document.querySelectorAll('.book');
-    const numOfDots = 6; // Change the number of dots here
+    const numOfDots = 4; // Change the number of dots here
     for (let i = 0; i < numOfDots; i++) {
         const dot = document.createElement('span');
         dot.classList.add('dot');
@@ -40,6 +48,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Append dots container to the carousel container
     carouselContainer.appendChild(dotsContainer);
+
+    // Set the first dot as active initially
+    const firstDot = dotsContainer.querySelector('.dot');
+    firstDot.classList.add('active-dot');
 
     // Update active dot based on scroll position
     carousel.addEventListener('scroll', function() {

@@ -8,3 +8,6 @@ function setActive(element)
     element.parentElement.classList.add('active');
 }
 /*ENd of Navgation active status*/
+
+/*Article carsouel*/
+

@@ -154,8 +154,49 @@ body {
 }
 
 /*End of hero section*/
+
+
+/*article*/
+
+.article_card {
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: 300px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.article_card:hover {
+    transform: translateY(-5px);
+}
+
+.article_card img {
+    width: 300px;
+   height: 167.8px;
+    border-radius: 5px;
+}
+
+.article_info {
+    padding: 10px 0;
+}
+
+.article_info h2 {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.article_info p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+}
+
 /**/
-/**/
+
+  
 /**/
 /**/
 /**/
