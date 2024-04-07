@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./CSS/scriptures.css">
+    <link rel="stylesheet" href="./CSS/hed_foot.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <title>Sanathana vedantism</title>
+</head>
+<body >
+    <section class="daily_prayer">
+        <header>
+            <p>Shubh Prabhatam! Breathe deep, chant "Om". Daily pujas bring blessings from home.</p>
+            <button onclick="navigateToPrayers()">Start Puja &#8594;</button>
+            <script>
+                function navigateToPrayers() {
+                  window.location.href = "prayers.html";
+                }
+              </script>
+        </header>
+    </section>
+
+    <section class="logo_des">
+        <a href="./index.html"><h1 id="logo_name">SANATHANA SANGHA</h1></a>
+        <input type="text" placeholder="&#xF002; Search for..." style="font-family:Arial, FontAwesome" id="search_box" />
+        <button class="login-btn">LOG IN</button>
+    </section>
+    <section class="nav_content">
+      <nav>
+        <div class="nav_pages">
+            <ul class="main_menu">
+                <li class="menu_item">
+                    <a href="index.html" onclick="setActive(this)">HOME &#9660;</a>
+                    <div class="submenu_container">
+                        <ul class="submenu">
+                            <li id="sub_list"><a href="./RSS.html" onclick="setActive(this)">RSS</a></li>
+                            <li id="sub_list"><a href="./BajrangDal.html" onclick="setActive(this)">BAJRANG DAL</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="menu_item"><a href="./history.html" onclick="setActive(this)">HISTORY</a></li>
+                <li class="menu_item"><a href="./prayers.html" onclick="setActive(this)">PRAYERS</a></li>
+                <li class="menu_item">
+                    <a href="./scriptures.html" onclick="setActive(this)">SCRIPTURES &#9660;</a>
+                    <div class="submenu_container">
+                        <ul class="submenu">
+                            <li id="sub_list"><a href="./scriptures.html/books_sec" onclick="setActive(this)">BOOKS</a></li>
+                            <li id="sub_list"><a href="./" onclick="setActive(this)">ARTICLES</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="menu_item"><a href="./darshan.html" onclick="setActive(this)">DARSHAN</a></li>
+            </ul>
+        </div>
+    </nav>
+    </section>
+    <section class="books_sec">
+            <h1>Books</h1>
+            <div class="books_cat">    
+                <!-- Book 1 -->
+                <div class="book">
+                    <img src="./assets/books/bhagavad-gita-as-it-is.jpg" alt="Book 1">
+                    <h2>Bhagavad Gita</h2>
+                    <p>The Bhagavad Gita, often referred to as the Gita, is a 700-verse Hindu scripture, which is part of the epic Mahabharata. 
+                      It forms the chapters 23–40 of book 6 of the Mahabharata called the Bhishma Parva. 
+                      The work is dated to the second half of the first millennium BCE. <a href="https://en.wikipedia.org/wiki/Bhagavad_Gita" class="read_more" >Read more</a></p>
+                    <a href="https://amzn.in/d/1YykRJO" class="download">GET IT</a>
+                </div>
+                <!-- Book 2 -->
+                <div class="book">
+                    <img src="./assets/books/ramayana.jpg" alt="Book 2">
+                    <h2>Ramayana</h2>
+                    <p>The Ramayana also known as Valmiki Ramayana, as traditionally attributed to Valmiki, is a smriti text from ancient India, 
+                      one of the two important epics of Hinduism known as the Itihasas, the other being the Mahabharata. The epic narrates the life of Rama, 
+                      a prince of Ayodhya in the kingdom of Kosala. <a href="https://en.wikipedia.org/wiki/Ramayana" class="read_more" >Read more</a></p>
+                    <a href="https://amzn.in/d/iDckIbn" class="download">GET IT</a>
+                </div>
+                <!-- Book 3 -->
+                <div class="book">
+                    <img src="./assets/books/Mahabharata.jpg" alt="Book 3" >
+                    <h2>Mahabharata</h2>
+                    <p>The Mahābhārata is one of the two major Smriti texts and Sanskrit epics of ancient India revered in Hinduism, the other being the Rāmāyaṇa. 
+                      It narrates the events and aftermath of the Kurukshetra War, a war of succession between two groups of princely cousins, 
+                      the Kauravas and the Pāṇḍavas. <a href="https://en.wikipedia.org/wiki/Mahabharata" class="read_more" >Read more</a></p>
+                    <a href="https://amzn.in/d/aZiB5VO" class="download">GET IT</a>
+                </div>
+                <!-- Book 4 -->
+                <div class="book">
+                    <img src="./assets/books/51uDTf06dRL._SY445_SX342_.jpg" alt="Book 4">
+                    <h2>Rigveda</h2>
+                    <p>The Rigveda or Rig Veda is an ancient Indian collection of Vedic Sanskrit hymns. It is one of the four sacred canonical Hindu texts known as the Vedas.
+                       Only one Shakha of the many survive today, namely the Śakalya Shakha. <a href="hhttps://en.wikipedia.org/wiki/Rigveda" class="read_more" >Read more</a></p>
+                    <a href="https://amzn.in/d/djXTR3X" class="download">GET IT</a>
+                </div>
+                <!-- Book 5 -->
+                <div class="book">
+                    <img src="./assets/books/Atharvaveda.jpg" alt="Book 5">
+                    <h2>Atharvaveda</h2>
+                    <p>The Atharvaveda or Atharva Veda or Atharvana Veda is the "knowledge storehouse of atharvāṇas, the procedures for everyday life". 
+                      The text is the fourth Veda, and is a late addition to the Vedic scriptures of Hinduism. 
+                      <a href="https://en.wikipedia.org/wiki/Atharvaveda" class="read_more" >Read more</a></p>
+                    <a href="https://amzn.in/d/4kFltqu" class="download">GET IT</a>
+                </div>
+                <!-- Book 6 -->
+                <div class="book">
+                    <img src="./assets/books/Bhagavata Purana.jpg" alt="Book 6">
+                    <h2>Bhagavata Purana</h2>
+                    <p>The Bhagavata Purana, also known as the Srimad Bhagavatam, Srimad Bhagavata Mahapurana or simply Bhagavata, is one of Hinduism's eighteen great Puranas. 
+                      <a href="https://en.wikipedia.org/wiki/Bhagavata_Purana" class="read_more" ><br>Read more</a></p>
+                    <a href="https://amzn.in/d/4brlp0i" class="download">GET IT</a>
+                </div>
+                <!-- Book 7 -->
+                <div class="book">
+                    <img src="./assets/books/The Śiva Purāṇa.jpg" alt="Book 7">
+                    <h2>The Śiva Purāṇa 1</h2>
+                    <p>The Shiva Purana is one of eighteen major texts of the Purana genre of Sanskrit texts in Hinduism, and part of the Shaivism literature corpus.
+                      [1] It primarily revolves around the Hindu god Shiva and goddess Parvati, 
+                      but references and reveres all gods. <a href="https://www.wisdomlib.org/hinduism/book/shiva-purana-english" class="read_more" >Read more</a></p>
+                    <a href="https://amzn.in/d/iig4QUh" class="download">GET IT</a>
+                </div>
+                <!-- Book 8 -->
+                <div class="book">
+                    <img src="./assets/books/Sanâtana Dharma.jpg" alt="Book 8">
+                    <h2>Sanâtana Dharma</h2>
+                    <p>Due to its age, it may contain imperfections such as marks, notations, marginalia and flawed pages. 
+                      Because we believe this work is culturally important, we have made it available as part of our commitment for protecting,
+                       preserving, and promoting the world's literature <a href="https://en.wikipedia.org/wiki/San%C4%81tana_Dharma" class="read_more" >Read more</a></p>
+                    <a href="https://amzn.in/d/d55gPok" class="download">GET IT</a>
+                </div>
+                <!-- Book 9 -->
+                <div class="book">
+                    <img src="./assets/books/Garuda Purana.jpg" alt="Book 9">
+                    <h2>Garuda Purana</h2>
+                    <p>The Garuda Purana is one of 18 Mahāpurāṇa texts in Hinduism. It is a part of the Vaishnavism literature corpus, 
+                      primarily centering around the Hindu god Vishnu. It was composed in Sanskrit and is today also available in various languages like Gujarati and English.
+                       <a href="https://en.wikipedia.org/wiki/Garuda_Purana" class="read_more" >Read more</a></p>
+                    <a href="https://amzn.in/d/1u79jJR" class="download">GET IT</a>
+                </div>
+                <!-- Book 10 -->
+                <div class="book">
+                    <img src="./assets/books/SAMPOORAN VEDA SET OF 9.jpg" alt="Book 10">
+                    <h2>SAMPOORAN VEDA SET OF 9</h2>
+                    <p>The Sanskrit word véda "knowledge, wisdom" is derived from the root vid- "to know". 
+                      This is reconstructed as being derived from the Proto-Indo-European root *weyd-, meaning "see" or "know.
+                      <a href="https://en.wikipedia.org/wiki/Vedas" class="read_more"><br>Read more</a></p>
+                    <a href="https://amzn.in/d/eq9EPEL" class="download">GET IT</a>
+                </div>  
+            </div>  
+
+    </section>
+
+
+    <div class="border_top" ></div>
+      <section class="footer_sec">
+        <footer>
+          <div class="footindi">
+              <div class="foot_info">
+                <div class="logo_name">
+                  <a href="./index.html"><h1 id="logo_name_fooa">SANATHANA SANGHA</h1></a>
+                </div>
+                <p id="foot_logo_info">Sanathana Sangha can refer to a community or group of individuals who follow Sanatana Dharma, also known as Hinduism.</p>
+              </div>
+              
+              <div class="foot_subscribe_title">
+                <h2>Get the latest news and updates</h2>
+                <div class="subscribe_input">
+                    <input type="email" placeholder="Enter your email address" id="subscribe_input_placeholder">
+                    <button class="btn_subscribe">Subscribe</button>
+                </div>
+              </div>
+              <div class="footer_contact">
+                <a href="#"><h3>Follow us</h3></a>
+                <img src="./assets/icon/Facebook.png" alt="Facebook" class="fimg_icon">
+                <img src="./assets/icon/Instagram.png" alt="Instagram" class="fimg_icon">
+                <img src="./assets/icon/LinkedIn.png" alt="LinkedIn" class="fimg_icon">
+                <img src="./assets/icon/Twitter.png" alt="Twitter" class="fimg_icon">
+                <img src="./assets/icon/YouTube.png" alt="YouTube" class="fimg_icon">
+            </div>
+          </div>
+          
+       
+          <div class="copy_nav">
+            <p id="foot_copyright">Copyright © 2024 | All Rights Reserved | <a href="">Terms and Conditions</a> | <a href="">Privacy Policy <br><br> <span id="dev_r" style="margin-top: 8px;">Developed by Revanth Reddy</span></a></p>
+            <div class="footer_nav">
+              <a href="./index.html"><h3>HOME</h3></a>
+              <a href="./history.html"><h3>HISTORY</h3></a>
+              <a href="./prayers.html"><h3>PRAYERS</h3></a>
+              <a href="./scriptures.html"><h3>SCRIPTURES</h3></a>
+              <a href="./darshan.html"><h3>DARSHAN</h3></a>
+            </div>
+          </div>
+          
+      </footer>
+
+      </section>
+    
+    <script src="./JS/index.js"> </script>
+    <script>
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "firebase/app";
+      import { getAnalytics } from "firebase/analytics";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyB8IdPXLfuBpvZUq3Nc4TLtFHQq_FI9hyE",
+        authDomain: "sanathana-vedantism.firebaseapp.com",
+        projectId: "sanathana-vedantism",
+        storageBucket: "sanathana-vedantism.appspot.com",
+        messagingSenderId: "1044924907059",
+        appId: "1:1044924907059:web:2b8a20927244da3c3ead46",
+        measurementId: "G-25FF808Y2E"
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
+    <script>
+      // Open login popup from login.html when the login button is clicked
+      const loginBtn = document.querySelector(".login-btn");
+      loginBtn.addEventListener("click", () => {
+          window.open("login.html", "_blank");
+      });
+    </script>
+  
+    
+    <script src="./login.js"></script>
+    
+</body>
+</html>

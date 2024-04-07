@@ -12,7 +12,12 @@
     <section class="daily_prayer">
         <header>
             <p>Shubh Prabhatam! Breathe deep, chant "Om". Daily pujas bring blessings from home.</p>
-            <button onclick="">Start Puja &#8594;</button>
+            <button onclick="navigateToPrayers()">Start Puja &#8594;</button>
+            <script>
+                function navigateToPrayers() {
+                  window.location.href = "prayers.html";
+                }
+              </script>
         </header>
     </section>
 
@@ -40,8 +45,8 @@
                     <a href="./scriptures.html" onclick="setActive(this)">SCRIPTURES &#9660;</a>
                     <div class="submenu_container">
                         <ul class="submenu">
-                            <li id="sub_list"><a href="./404.html" onclick="setActive(this)">BOOKS</a></li>
-                            <li id="sub_list"><a href="./404.html" onclick="setActive(this)">ARTICLES</a></li>
+                            <li id="sub_list"><a href="./scriptures.html/books_sec" onclick="setActive(this)">BOOKS</a></li>
+                            <li id="sub_list"><a href="./" onclick="setActive(this)">ARTICLES</a></li>
                         </ul>
                     </div>
                 </li>
@@ -52,7 +57,7 @@
     </section>
 
 
-<hr>
+    <div class="border_top" ></div>
       <section class="footer_sec">
         <footer>
           <div class="footindi">
