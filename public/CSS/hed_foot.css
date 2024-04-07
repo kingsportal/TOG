@@ -144,6 +144,7 @@ nav li.active
 
 }
 
+
 .nav_content {
     font-family: Arial, sans-serif;
     padding:0px 167px 0px 167px;
@@ -200,11 +201,20 @@ nav li.active
 /*end of Navigation bar*/
 
 /*Start of footer*/
+.border-shadow 
+{   
+    width: 100%;
+    height: 1px;
+    background-color: #d8d8d8; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+}
+.footer_sec
+{
+    margin-top: 20px;
+}
 footer
 {
-    
-    padding:0px 167px 0px 167px;
-    
+    padding:0px 167px 0px 167px;   
 }
 .footindi
 {
@@ -226,6 +236,10 @@ footer
 .foot_subscribe_title {
     width: 421px;
     height: 78px;
+}
+.footer_nav a:hover
+{
+    color: #2FC4C6;
 }
 
 .subscribe_input {
