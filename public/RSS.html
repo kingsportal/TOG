@@ -9,47 +9,52 @@
     <title>Sanathana vedantism</title>
 </head>
 <body >
-    <section class="daily_prayer">
-        <header>
-            <p>Shubh Prabhatam! Breathe deep, chant "Om". Daily pujas bring blessings from home.</p>
-            <button>Start Puja &#8594;</button>
-        </header>
-    </section>
+  <section class="daily_prayer">
+    <header>
+        <p>Shubh Prabhatam! Breathe deep, chant "Om". Daily pujas bring blessings from home.</p>
+        <button onclick="navigateToPrayers()">Start Puja &#8594;</button>
+        <script>
+            function navigateToPrayers() {
+              window.location.href = "prayers.html";
+            }
+          </script>
+    </header>
+</section>
 
-    <section class="logo_des">
-        <a href="./index.html"><h1 id="logo_name">SANATHANA SANGHA</h1></a>
-        <input type="text" placeholder="&#xF002; Search for..." style="font-family:Arial, FontAwesome" id="search_box" />
-        <button class="login-btn">Login/Sign up</button>
-    </section>
-    <section class="nav_content">
-      <nav>
-        <div class="nav_pages">
-            <ul class="main_menu">
-                <li class="menu_item">
-                    <a href="index.html" onclick="setActive(this)">HOME &#9660;</a>
-                    <div class="submenu_container">
-                        <ul class="submenu">
-                            <li id="sub_list"><a href="./RSS.html" onclick="setActive(this)">RSS</a></li>
-                            <li id="sub_list"><a href="./BajrangDal.html" onclick="setActive(this)">BAJRANG DAL</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="menu_item"><a href="./history.html" onclick="setActive(this)">HISTORY</a></li>
-                <li class="menu_item"><a href="./prayers.html" onclick="setActive(this)">PRAYERS</a></li>
-                <li class="menu_item">
-                    <a href="./scriptures.html" onclick="setActive(this)">SCRIPTURES &#9660;</a>
-                    <div class="submenu_container">
-                        <ul class="submenu">
-                            <li id="sub_list"><a href="./404.html" onclick="setActive(this)">BOOKS</a></li>
-                            <li id="sub_list"><a href="./404.html" onclick="setActive(this)">ARTICLES</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="menu_item"><a href="./darshan.html" onclick="setActive(this)">DARSHAN</a></li>
-            </ul>
-        </div>
-    </nav>
-    </section>
+<section class="logo_des">
+    <a href="./index.html"><h1 id="logo_name">SANATHANA SANGHA</h1></a>
+    <input type="text" placeholder="&#xF002; Search for..." style="font-family:Arial, FontAwesome" id="search_box" />
+    <button class="login-btn">LOG IN</button>
+</section>
+<section class="nav_content">
+  <nav>
+    <div class="nav_pages">
+        <ul class="main_menu">
+            <li class="menu_item">
+                <a href="index.html" onclick="setActive(this)">HOME &#9660;</a>
+                <div class="submenu_container">
+                    <ul class="submenu">
+                        <li id="sub_list"><a href="./RSS.html" onclick="setActive(this)">RSS</a></li>
+                        <li id="sub_list"><a href="./BajrangDal.html" onclick="setActive(this)">BAJRANG DAL</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="menu_item"><a href="./history.html" onclick="setActive(this)">HISTORY</a></li>
+            <li class="menu_item"><a href="./prayers.html" onclick="setActive(this)">PRAYERS</a></li>
+            <li class="menu_item">
+                <a href="./scriptures.html" onclick="setActive(this)">SCRIPTURES &#9660;</a>
+                <div class="submenu_container">
+                    <ul class="submenu">
+                        <li id="sub_list"><a href="./scriptures.html#book_sec" onclick="setActive(this)">BOOKS</a></li>
+                        <li id="sub_list"><a href="./scriptures.html#article_sec" onclick="setActive(this)">ARTICLES</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="menu_item"><a href="./404.html" onclick="setActive(this)">DARSHAN</a></li>
+        </ul>
+    </div>
+</nav>
+</section>
 
     
     <Section class="join_bd" style="padding: 0px 167px 0px 167px;">
@@ -59,16 +64,15 @@
     </Section>
 
 
-
-
+    <div class="border_top" ></div>
     <section class="footer_sec">
         <footer>
           <div class="footindi">
               <div class="foot_info">
                 <div class="logo_name">
-                  <a href=""><h1 id="logo_name_fooa">SANATHANA SANGHA</h1></a>
+                  <a href="./index.html"><h1 id="logo_name_fooa">SANATHANA SANGHA</h1></a>
                 </div>
-                <p id="foot_logo_info">Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam mauris sed ma</p>
+                <p id="foot_logo_info">Sanathana Sangha can refer to a community or group of individuals who follow Sanatana Dharma, also known as Hinduism.</p>
               </div>
               
               <div class="foot_subscribe_title">
@@ -79,14 +83,13 @@
                 </div>
               </div>
               <div class="footer_contact">
-                  <a href=""><h3>Follow us</h3></a>
-                  <img src="./assets/icon/Facebook.png" alt="" id="fimg_icon">
-                  <img src="./assets/icon/Instagram.png" alt="" id="fimg_icon">
-                  <img src="./assets/icon/LinkedIn.png" alt="" id="fimg_icon">
-                  <img src="./assets/icon/Twitter.png" alt="" id="fimg_icon">
-                  <img src="./assets/icon/YouTube.png" alt="" id="fimg_icon">
-                  
-              </div>
+                <a href="#"><h3>Follow us</h3></a>
+                <img src="./assets/icon/Facebook.png" alt="Facebook" class="fimg_icon">
+                <img src="./assets/icon/Instagram.png" alt="Instagram" class="fimg_icon">
+                <img src="./assets/icon/LinkedIn.png" alt="LinkedIn" class="fimg_icon">
+                <img src="./assets/icon/Twitter.png" alt="Twitter" class="fimg_icon">
+                <img src="./assets/icon/YouTube.png" alt="YouTube" class="fimg_icon">
+            </div>
           </div>
           
        
@@ -100,10 +103,8 @@
               <a href="./darshan.html"><h3>DARSHAN</h3></a>
             </div>
           </div>
-          
-      </footer>
-
-      </section>
+        </footer>
+    </section>
     
     <script src="./JS/index.js"> </script>
     <script>

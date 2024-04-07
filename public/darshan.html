@@ -8,18 +8,23 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
     <title>Sanathana vedantism</title>
 </head>
-<body >
+<body>
     <section class="daily_prayer">
         <header>
             <p>Shubh Prabhatam! Breathe deep, chant "Om". Daily pujas bring blessings from home.</p>
-            <button>Start Puja &#8594;</button>
+            <button onclick="navigateToPrayers()">Start Puja &#8594;</button>
+            <script>
+                function navigateToPrayers() {
+                  window.location.href = "prayers.html";
+                }
+              </script>
         </header>
     </section>
 
     <section class="logo_des">
         <a href="./index.html"><h1 id="logo_name">SANATHANA SANGHA</h1></a>
         <input type="text" placeholder="&#xF002; Search for..." style="font-family:Arial, FontAwesome" id="search_box" />
-        <button class="login-btn">Login</button>
+        <button class="login-btn">LOG IN</button>
     </section>
     <section class="nav_content">
       <nav>
@@ -40,35 +45,46 @@
                     <a href="./scriptures.html" onclick="setActive(this)">SCRIPTURES &#9660;</a>
                     <div class="submenu_container">
                         <ul class="submenu">
-                            <li id="sub_list"><a href="./404.html" onclick="setActive(this)">BOOKS</a></li>
-                            <li id="sub_list"><a href="./404.html" onclick="setActive(this)">ARTICLES</a></li>
+                            <li id="sub_list"><a href="./scriptures.html#book_sec" onclick="setActive(this)">BOOKS</a></li>
+                            <li id="sub_list"><a href="./scriptures.html#article_sec" onclick="setActive(this)">ARTICLES</a></li>
                         </ul>
                     </div>
                 </li>
-                <li class="menu_item"><a href="./darshan.html" onclick="setActive(this)">DARSHAN</a></li>
+                <li class="menu_item"><a href="./404.html" onclick="setActive(this)">DARSHAN</a></li>
             </ul>
         </div>
     </nav>
     </section>
 
- 
-    <Section class="join_bd" style="padding: 0px 167px 0px 167px;">
-      <iframe src="https://ttdevasthanams.ap.gov.in/home/dashboard" width="100%" height="800px" frameborder="0">
-        <p>Your browser does not support iframes.</p>
-      </iframe>
-    </Section>
+    <section class="404_video" id="videoout" >
+      <div class="video-container">
+        <video id="bg-video" autoplay muted>
+          <source src="./assets/video/TOG404.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="mask"></div>
+        <div class="text-overlay">
+          <h2>We are working on the page</h2>
+          <p>Please check back soon</p>
+          
+        </div>
+        <div class="bottom-text">
+          It will be soon available. Visit again!
+          <p>Subscribe to get updated</p>
+        </div>
+      </div>
+    </section>
 
 
-
-
+    <div class="border_top" ></div>
     <section class="footer_sec">
         <footer>
           <div class="footindi">
               <div class="foot_info">
                 <div class="logo_name">
-                  <a href=""><h1 id="logo_name_fooa">SANATHANA SANGHA</h1></a>
+                  <a href="./index.html"><h1 id="logo_name_fooa">SANATHANA SANGHA</h1></a>
                 </div>
-                <p id="foot_logo_info">Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam mauris sed ma</p>
+                <p id="foot_logo_info">Sanathana Sangha can refer to a community or group of individuals who follow Sanatana Dharma, also known as Hinduism.</p>
               </div>
               
               <div class="foot_subscribe_title">
@@ -79,14 +95,13 @@
                 </div>
               </div>
               <div class="footer_contact">
-                  <a href=""><h3>Follow us</h3></a>
-                  <img src="./assets/icon/Facebook.png" alt="" id="fimg_icon">
-                  <img src="./assets/icon/Instagram.png" alt="" id="fimg_icon">
-                  <img src="./assets/icon/LinkedIn.png" alt="" id="fimg_icon">
-                  <img src="./assets/icon/Twitter.png" alt="" id="fimg_icon">
-                  <img src="./assets/icon/YouTube.png" alt="" id="fimg_icon">
-                  
-              </div>
+                <a href="#"><h3>Follow us</h3></a>
+                <img src="./assets/icon/Facebook.png" alt="Facebook" class="fimg_icon">
+                <img src="./assets/icon/Instagram.png" alt="Instagram" class="fimg_icon">
+                <img src="./assets/icon/LinkedIn.png" alt="LinkedIn" class="fimg_icon">
+                <img src="./assets/icon/Twitter.png" alt="Twitter" class="fimg_icon">
+                <img src="./assets/icon/YouTube.png" alt="YouTube" class="fimg_icon">
+            </div>
           </div>
           
        
@@ -100,10 +115,8 @@
               <a href="./darshan.html"><h3>DARSHAN</h3></a>
             </div>
           </div>
-          
-      </footer>
-
-      </section>
+        </footer>
+    </section>
     
     <script src="./JS/index.js"> </script>
     <script>
@@ -129,7 +142,16 @@
       const app = initializeApp(firebaseConfig);
       const analytics = getAnalytics(app);
     </script>
+    <script>
+      // Open login popup from login.html when the login button is clicked
+      const loginBtn = document.querySelector(".login-btn");
+      loginBtn.addEventListener("click", () => {
+          window.open("login.html", "_blank");
+      });
+    </script>
+  
     
- 
+    <script src="./login.js"></script>
+    
 </body>
 </html>

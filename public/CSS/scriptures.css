@@ -23,7 +23,6 @@
 
 .books_sec h1 {
     margin-top: 50px;
-    text-align: center;
     font-size: 38px;
 }
 
@@ -57,4 +56,61 @@
 
 .download:hover {
     background-color: #0056b3;
+}
+
+
+/*Articles section*/
+
+.articles_sec {
+    padding: 0px 167px 0px 167px; 
+    text-align: center; 
+}
+.articles_sec h1 {
+    margin-top: 80px;
+    font-size: 38px;
+}
+
+.article_cat {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 20px; 
+    justify-content: center;
+}
+
+
+/* Styling for the article card */
+.article_card {
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: 300px; /* Adjust width as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.article_card:hover {
+    transform: translateY(-5px);
+}
+
+.article_card img {
+    width: 300px;
+   height: 167.8px;
+    border-radius: 5px;
+}
+
+.article_info {
+    padding: 10px 0;
+}
+
+.article_info h2 {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.article_info p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
 }
